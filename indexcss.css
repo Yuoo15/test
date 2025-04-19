@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #3B3B3B;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: static;
+    width: 100%;
+}
+
+nav{
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.link{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 1em;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.numAdmin, .textAdmin{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-inline: 30px;
+}
+
+@media(max-width:700px){
+    header{
+        display: block;
+    }
+    nav{
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translate(0%, -50%);
+    }
+    .numAdmin, .textAdmin{
+        visibility: hidden;
+    }
+
+    .link{
+        font-size: 1.3em;
+    }
+}
+
+/*конец*/
+
+.about_me{
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "info photo"
+    "naviki naviki";
+}
+
+.info{
+    padding: 30px;
+    grid-area: info;
+    background-color: #2B2B2B;
+}
+
+.hello{
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.podhello{
+    font-family: "Roboto", sans-serif;
+    color: #936A00;
+    font-size: 1em;
+    background-color: #FFC857;
+    padding: 6px;
+    border-radius: 15px;
+    display: inline;
+}
+
+.about{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    margin-top: 20px;
+    line-height: 1.3em;
+}
+
+.photo{
+    grid-area: photo;
+    background-color: aqua;
+}
+
+.naviki{
+    grid-area: naviki;
+    background-color: black;
+}
